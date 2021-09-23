@@ -168,15 +168,14 @@ class PremiumProfile extends Profile {
     }
 }
 
-    const studentContainer = document.querySelector(".student-container");
+    const studentContainer = document.querySelector(".students-container");
     const James = new PremiumProfile(
-    // "James",
+    "James",
     "Harrison",
     "Whoops",
     ["html", "css", "javascript"],
     "https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png",
-    // "https://developer.mozilla.org/en-US/"
-    // https://developer.mozilla.org/en-US/
+    "https://developer.mozilla.org/en-US/"
     );
     console.log(James)
     const exampleUno = new Profile(
@@ -195,7 +194,7 @@ class PremiumProfile extends Profile {
         "https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png"
     );
 
-
-// studentContainer.innerHTML += James.getProfileHTML.getProfile();
-// studentContainer.innerHTML += exampleUno.getProfileHTML();
-// studentContainer.innerHTML += exampleDuo.getProfileHTML();
+console.log(James.getProfileHTML());
+studentContainer.innerHTML += James.getProfileHTML();
+studentContainer.innerHTML += exampleUno.getProfileHTML();
+studentContainer.innerHTML += exampleDuo.getProfileHTML();
